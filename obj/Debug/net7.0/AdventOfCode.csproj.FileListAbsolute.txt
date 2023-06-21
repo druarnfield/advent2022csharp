@@ -1,0 +1,15 @@
+/Users/druarnfield/Documents/Programming/C#/AdventOfCode2022/AdventOfCode/bin/Debug/net7.0/AdventOfCode
+/Users/druarnfield/Documents/Programming/C#/AdventOfCode2022/AdventOfCode/bin/Debug/net7.0/AdventOfCode.deps.json
+/Users/druarnfield/Documents/Programming/C#/AdventOfCode2022/AdventOfCode/bin/Debug/net7.0/AdventOfCode.runtimeconfig.json
+/Users/druarnfield/Documents/Programming/C#/AdventOfCode2022/AdventOfCode/bin/Debug/net7.0/AdventOfCode.dll
+/Users/druarnfield/Documents/Programming/C#/AdventOfCode2022/AdventOfCode/bin/Debug/net7.0/AdventOfCode.pdb
+/Users/druarnfield/Documents/Programming/C#/AdventOfCode2022/AdventOfCode/obj/Debug/net7.0/AdventOfCode.csproj.AssemblyReference.cache
+/Users/druarnfield/Documents/Programming/C#/AdventOfCode2022/AdventOfCode/obj/Debug/net7.0/AdventOfCode.GeneratedMSBuildEditorConfig.editorconfig
+/Users/druarnfield/Documents/Programming/C#/AdventOfCode2022/AdventOfCode/obj/Debug/net7.0/AdventOfCode.AssemblyInfoInputs.cache
+/Users/druarnfield/Documents/Programming/C#/AdventOfCode2022/AdventOfCode/obj/Debug/net7.0/AdventOfCode.AssemblyInfo.cs
+/Users/druarnfield/Documents/Programming/C#/AdventOfCode2022/AdventOfCode/obj/Debug/net7.0/AdventOfCode.csproj.CoreCompileInputs.cache
+/Users/druarnfield/Documents/Programming/C#/AdventOfCode2022/AdventOfCode/obj/Debug/net7.0/AdventOfCode.dll
+/Users/druarnfield/Documents/Programming/C#/AdventOfCode2022/AdventOfCode/obj/Debug/net7.0/refint/AdventOfCode.dll
+/Users/druarnfield/Documents/Programming/C#/AdventOfCode2022/AdventOfCode/obj/Debug/net7.0/AdventOfCode.pdb
+/Users/druarnfield/Documents/Programming/C#/AdventOfCode2022/AdventOfCode/obj/Debug/net7.0/AdventOfCode.genruntimeconfig.cache
+/Users/druarnfield/Documents/Programming/C#/AdventOfCode2022/AdventOfCode/obj/Debug/net7.0/ref/AdventOfCode.dll
