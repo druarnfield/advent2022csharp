@@ -1,0 +1,88 @@
+# Compiled Object files
+*.sln.cache
+*.dll
+*.exe
+*.pdb
+
+# NuGet packages
+*.nuget.props
+*.nuget.targets
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio files
+.vs/
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.[Cc]ache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.sdf
+*.dbmdl
+*.dbproj.user
+*.user
+*.psess
+*.vsp
+*.vspx
+*.vsix
+*.publishsettings
+*.pubxml
+*.publishproj
+*.publishproj.user
+*.userprefs
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# Resharper specific
+*_ReSharper.*
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# NCrunch specific
+*.[Nn]Crunch*
+
+# Installshield output folder
+[Ee]xpress/
+
+# Doc project output folder
+[Dd]oc/[Hh]elp/
+
+# Build output folder
+[Bb]uild/
+
+# Roslyn cache directories
+*.ide/
+*.sln.docstates
+
+# Rider
+.idea/
+*.sln.iml
+
+# Unity
+[Ll]ibrary/
+[Ll]ocal[Cc]ache/
+[Ll]ibrary/[Ss]criptAssemblies/
+[Ll]ibrary/[Pp]ackageCache/
+[Ll]ibrary/UnityAssemblies/
+
+# Compiled Dynamic Link Libraries
+*.so
+*.dylib
+*.dll.a
+*.o
