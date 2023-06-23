@@ -16,6 +16,9 @@
           case 2: 
             DayTwo.Run();
             break;
+          case 3:
+            DayThree.Run();
+            break;
           default:
             Console.WriteLine("Invalid day value provided.");
             break;
