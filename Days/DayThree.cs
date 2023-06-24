@@ -16,8 +16,8 @@ namespace AdventOfCode2022
                 {
                     throw new Exception("Input file is empty.");
                 }
-                 Console.WriteLine("The score for the input is: " + CalculateScore(lines));
-                 Console.WriteLine("The score for the groups is: " + CalculateGroupScore(ref lines));
+                Console.WriteLine("The score for the input is: " + CalculateScore(lines));
+                Console.WriteLine("The score for the groups is: " + CalculateGroupScore(ref lines));
             }
             catch (FileNotFoundException)
             {
@@ -28,7 +28,7 @@ namespace AdventOfCode2022
                 Console.WriteLine("An error occurred: " + e.Message);
             }
 
-           
+
 
 
         }
@@ -45,7 +45,7 @@ namespace AdventOfCode2022
             }
         }
 
-        private static char FindCommonItem(string rucksack) 
+        private static char FindCommonItem(string rucksack)
         {
             var leftletters = new HashSet<char>();
             var rightletters = new HashSet<char>();
@@ -65,7 +65,8 @@ namespace AdventOfCode2022
             return leftletters.First();
 
         }
-        private static int CalculateScore(string[] input) {
+        private static int CalculateScore(string[] input)
+        {
             var score = 0;
             foreach (var rucksack in input)
             {
@@ -100,8 +101,8 @@ namespace AdventOfCode2022
                 else
                 {
                     groupsacks[0].BuildRucksack();
-                    groupsacks[1].BuildRucksack();      
-                    groupsacks[2].BuildRucksack();  
+                    groupsacks[1].BuildRucksack();
+                    groupsacks[2].BuildRucksack();
 
                     groupsacks[0].GetAllLetters.IntersectWith(groupsacks[1].GetAllLetters);
                     groupsacks[0].GetAllLetters.IntersectWith(groupsacks[2].GetAllLetters);
@@ -124,7 +125,7 @@ namespace AdventOfCode2022
         private HashSet<char> rightletters = new HashSet<char>();
         private HashSet<char> allletters = new HashSet<char>();
         private string rucksackstring;
-  
+
         public Rucksack(string rucksackstring)
         {
             this.rucksackstring = rucksackstring;
@@ -132,7 +133,7 @@ namespace AdventOfCode2022
 
         public void BuildRucksack()
         {
-            foreach(var letter in rucksackstring)
+            foreach (var letter in rucksackstring)
             {
                 allletters.Add(letter);
             }

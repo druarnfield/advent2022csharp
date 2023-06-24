@@ -34,7 +34,8 @@ namespace AdventOfCode2022
                         currentTotal += int.Parse(line);
                     }
                 }
-            } catch (InvalidOperationException e)
+            }
+            catch (InvalidOperationException e)
             {
                 Console.WriteLine(e);
             }

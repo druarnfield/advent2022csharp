@@ -24,7 +24,7 @@ namespace AdventOfCode2022
         private static string[]? lines = TextUtils.ReadFile("./input/DayTwo.input");
         private static Dictionary<char, int> PlayerKey = new Dictionary<char, int>();
         private static Dictionary<char, WinLossOrDraw> PlayerKeyPartTwo = new Dictionary<char, WinLossOrDraw>();
-        private static Dictionary <char, int> OpponentKey = new Dictionary<char, int>();
+        private static Dictionary<char, int> OpponentKey = new Dictionary<char, int>();
 
         private enum WinLossOrDraw
         {
@@ -40,7 +40,7 @@ namespace AdventOfCode2022
             OpponentKey.Add('A', 1);
             OpponentKey.Add('B', 2);
             OpponentKey.Add('C', 3);
-            
+
             // Player Values
             PlayerKey.Add('X', 1);
             PlayerKey.Add('Y', 2);
@@ -82,8 +82,8 @@ namespace AdventOfCode2022
             return player; // Default case or case where absoluteDifference > 2
         }
 
-             private static int winLossOrDraw(int opponent, WinLossOrDraw player)
-        {   
+        private static int winLossOrDraw(int opponent, WinLossOrDraw player)
+        {
             switch (player)
             {
                 case WinLossOrDraw.Win:
@@ -106,18 +106,19 @@ namespace AdventOfCode2022
                             return opponent - 1;
                     }
                     break;
-                case WinLossOrDraw.Draw:    
+                case WinLossOrDraw.Draw:
                     return opponent;
                 default:
                     return 0;
             }
             return 0;
-            
+
         }
 
-        private static int playGames() 
+        private static int playGames()
         {
-            try{
+            try
+            {
                 if (lines == null)
                 {
                     throw new InvalidOperationException("The input file has not been read.");
@@ -127,20 +128,21 @@ namespace AdventOfCode2022
                 .Sum();
 
                 return totalScore;
-            } 
-            
-            catch (InvalidOperationException e) 
+            }
+
+            catch (InvalidOperationException e)
             {
                 Console.WriteLine(e);
                 return 0;
             }
 
-        
+
         }
 
-        private static int playGamesPartTwo() 
+        private static int playGamesPartTwo()
         {
-            try{
+            try
+            {
                 if (lines == null)
                 {
                     throw new InvalidOperationException("The input file has not been read.");
@@ -150,9 +152,9 @@ namespace AdventOfCode2022
                 .Sum();
 
                 return totalScore;
-            } 
-            
-            catch (InvalidOperationException e) 
+            }
+
+            catch (InvalidOperationException e)
             {
                 Console.WriteLine(e);
                 return 0;
