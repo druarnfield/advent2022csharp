@@ -8,7 +8,7 @@ namespace AdventOfCode2022
 
         private static Dictionary<int, Stack<char>> Stacks = new Dictionary<int, Stack<char>>();
 
-        public static void Run()
+        public static void Run(char part)
         {
             (beforeSpace, afterSpace) = TextUtils.ReadBeforeAndAfterBlank("./input/DayFive.input");
 
@@ -18,12 +18,31 @@ namespace AdventOfCode2022
 
             BuildStacks(ref Stacks, ref stackIndices, ref beforeSpace);
 
-            foreach (string line in afterSpace)
+            // Part A
+
+            if (part == 'a')
             {
-                MoveItems(extractMovements(line));
+
+                foreach (string line in afterSpace)
+                {
+                    MoveItems(extractMovements(line));
+                }
+
+                PrintTopItems(ref Stacks);
+
             }
 
-            PrintTopItems(ref Stacks);
+            else if (part == 'b')
+            {
+                // Part B
+                foreach (string line in afterSpace)
+                {
+                    MoveMultipleItems(extractMovements(line));
+                }
+
+                PrintTopItems(ref Stacks);
+            }
+
         }
 
         private static Dictionary<int, Stack<char>> BuildDictionary(ref List<int> stackIndices)
@@ -96,6 +115,25 @@ namespace AdventOfCode2022
             for (int i = 0; i < multiplier; i++)
             {
                 Stacks[stackto].Push(Stacks[stackfrom].Pop());
+            }
+        }
+
+        private static void MoveMultipleItems(params int[] movements)
+        {
+            int stackfrom = movements[1];
+            int stackto = movements[2];
+            int multiplier = movements[0];
+
+            Stack<char> tempStack = new Stack<char>();
+
+            for (int i = 0; i < multiplier; i++)
+            {
+                tempStack.Push(Stacks[stackfrom].Pop());
+            }
+
+            for (int i = 0; i < multiplier; i++)
+            {
+                Stacks[stackto].Push(tempStack.Pop());
             }
         }
 

@@ -20,7 +20,7 @@
             DayThree.Run();
             break;
           case 5:
-            DayFive.Run();
+            DayFive.Run('b');
             break;
           default:
             Console.WriteLine("Invalid day value provided.");
