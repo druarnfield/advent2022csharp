@@ -22,6 +22,9 @@
           case 5:
             DayFive.Run('b');
             break;
+          case 7:
+            DaySeven.Run();
+            break;
           default:
             Console.WriteLine("Invalid day value provided.");
             break;
